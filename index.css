@@ -190,7 +190,9 @@ nav ul li{
 .fa-solid.fa-bars{
     display: block;
     width: 20px;
-    
-    
+}
+.show-menu
+{
+    max-height: 60px;
 }
 }

@@ -17,7 +17,7 @@
             <li>About us</li>
         </ul>
         <button class="nav-btn">Get started <i class="fa-solid fa-arrow-right"></i></button>
-        <i class="fa-solid fa-bars" onclick="tooglemenu()"></i>
+        <i class="fa-solid fa-bars" onclick="tooglemenu()"> </i>
     </nav>
 <!-- header -->
 <div class="header">
@@ -39,10 +39,11 @@
     let navbar=document.querySelector('nav');
 
 
-    let menulinks=document.getElementById("menu-links");
+    let menuLinks=document.getElementById("menu-links");
 
-    function tooglemenu(){
-        menulinks.classList.toogle('show-menu');
+    function tooglemenu()
+    {
+        menuLinks.classList.toogle('show-menu');
 
     }
 

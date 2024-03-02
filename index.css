@@ -107,7 +107,7 @@ nav ul li{
     max-width: 360px;
     font-weight: 500;
 }
-.user-img{
+/* .user-img{
     width: 80%;
     height: 85%;
     max-width: 500px;
@@ -115,4 +115,27 @@ nav ul li{
     right: 13%;
     bottom: 0;
 
+} */
+/* ANIMATION */
+.header h1 span{
+    background: linear-gradient(#000, #000 );
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 0%;
+}
+.header h1 span:first-child{
+    animation: textcolor1 2s linear infinite alternate;   
+}
+@keyframes textcolor1{
+    0%{
+        background-size: 0%;
+    }
+    40%{
+        background-size: 100%;
+    }
+    100%
+    {
+        background-size: 100%;
+    }
 }

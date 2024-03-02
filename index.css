@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+        font-family: "Satisfy", cursive;
+        font-weight: 400;
+        font-style: normal;
+      
+      
+
+}
+
+nav .logo
+{
+    width: 50px;
+    cursor: pointer;
+
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    border-bottom: 1px solid #000;
+    z-index: 10;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    font-weight: 500;
+    margin: 5px 5px;
+    cursor: pointer;
+}
+.nav-btn{
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    padding: 15px 25px;
+    outline: 0;
+    border-radius: 40px;
+    cursor: pointer;
+
+
+}
+.nav-btn img {
+    width: 16px;
+    margin-left: 8px;
+}
+/* header */
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#eefff9 0%,#ffccc1 49%,#dcdbff 100%);
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.header h1{
+    font-size: 13vw;
+    line-height: 11vw;
+    margin-top: 100px;
+}
+.btn-container{
+    margin: 20px 0;
+
+}
+.header button{
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.btn-dark
+{
+    background: #000;
+    color: #fff;
+    padding: 10px 10px 10px 30px;
+    border-radius: 40px;
+}
+.btn-dark .fa-solid{
+    width: 40px;
+   background-color: #00ff04fb;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 30px;
+}
+.btn-light
+{
+    background: transparent;
+    text-decoration: underline;
+}
+.btn-light .fa-solid{
+    width: 20px;
+    margin-right: 10px;
+}
+.header p{
+    max-width: 360px;
+    font-weight: 500;
+}
+.user-img{
+    width: 80%;
+    height: 85%;
+    max-width: 500px;
+    position: absolute;
+    right: 13%;
+    bottom: 0;
+
+}

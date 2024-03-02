@@ -10,13 +10,14 @@
 <body>
     <nav>
         <img src="expresso.png" alt="" class="logo" >
-        <ul>
+        <ul id="menu-links">
             <li>Home</li>
             <li>Services</li>
             <li>Projects</li>
             <li>About us</li>
         </ul>
         <button class="nav-btn">Get started <i class="fa-solid fa-arrow-right"></i></button>
+        <i class="fa-solid fa-bars" onclick="tooglemenu()"></i>
     </nav>
 <!-- header -->
 <div class="header">
@@ -36,6 +37,20 @@
 
 <script>
     let navbar=document.querySelector('nav');
+
+
+    let menulinks=document.getElementById("menu-links");
+
+    function tooglemenu(){
+        menulinks.classList.toogle('show-menu');
+
+    }
+
+
+
+
+
+
     window.onscroll=function()
     {
         if(window.scrollY > 0)

@@ -125,7 +125,10 @@ nav ul li{
     background-size: 0%;
 }
 .header h1 span:first-child{
-    animation: textcolor1 2s linear infinite alternate;   
+    animation: textcolor1 3s linear infinite alternate;   
+}
+.header h1 span:last-child{
+    animation: textcolor2 3s linear infinite alternate; 
 }
 @keyframes textcolor1{
     0%{
@@ -138,4 +141,56 @@ nav ul li{
     {
         background-size: 100%;
     }
+}
+@keyframes textcolor2{
+    0%{
+        background-size: 0%;
+    }
+    40%{
+        background-size: 0%;
+    }
+    100%
+    {
+        background-size: 100%;
+    }
+}
+.fa-solid.fa-bars{
+    display: none;
+}
+
+/* media query nav bar */
+
+@media only screen and (max-width:600px)
+{
+nav ul{
+    position: absolute;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    left: 0;
+    top: 100%;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.nav-btn{
+    display: none;
+}
+nav .logo{
+    
+    width: 30px;
+
+}
+nav ul li{
+    margin: 10px;
+    font-size: 10px;
+
+}
+.fa-solid.fa-bars{
+    display: block;
+    width: 20px;
+    
+    
+}
 }
